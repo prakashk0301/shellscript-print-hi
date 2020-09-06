@@ -13,5 +13,11 @@ steps:
 - task: Bash@3
   inputs:
     filePath: 'script.sh'
+  displayName: run shell script
+
+- task: PowerShell@2
+  inputs:
+    filePath: 'ps.ps1'
+  displayName: run powershll
 
 
